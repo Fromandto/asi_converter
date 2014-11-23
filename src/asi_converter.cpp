@@ -13,7 +13,7 @@ int main(int argc , char ** argv)
 	ros::NodeHandle nh_;
 	image_transport::ImageTransport it_(nh_);
 	image_transport::Publisher image_pub_ = it_.advertise("/asi_converter/output_video" , 1);
-	ros::Rate loop_rate(30);
+	ros::Rate loop_rate(29);
 	cv::Mat frame;
 	cv::VideoCapture capture;
 	capture.open("/root/catkin_ws/test.avi");
